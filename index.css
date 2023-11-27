@@ -105,31 +105,55 @@ section{
     margin-right:170px;
  }
 
-.project-card:hover{
-    transform: scale(1.05);
-    -webkit-box-shadow: 10px 10px 40px 8px rgba(255,255,255,1);
-    -moz-box-shadow: 10px 10px 40px 8px rgba(255,255,255,1);
-    box-shadow: 10px 10px 40px 8px rgba(255,255,255,1);
-    
-}
+
 .project-card{
     display: flex;
     flex-flow: column;
     justify-content: space-between;
     align-items: center;
     background-color: rgb(61, 59, 59);
-    color:antiquewhite;
+    color: antiquewhite;
     width:30%;
-    
     border-radius: 10px; 
-    transition: 0.4s;
+   transition: 0.4s;
+}
+.project-card:hover{
+    -webkit-box-shadow: 10px 10px 40px 8px rgba(255,255,255,1);
+    -moz-box-shadow: 10px 10px 40px 8px rgba(255,255,255,1);
+    box-shadow: 10px 10px 40px 8px rgba(255,255,255,1);
+    animation: project-card-animation;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes project-card-animation {
+  0% {
+    border-bottom: 5px solid green;
+    transform: scale(1.02);
+  }
+  25% {
+    border-left: 5px solid green;
+    transform: scale(1.02);
+  }
+  50% {
+    border-top: 5px solid green;
+    transform: scale(1.02);
+  }
+  100% {
+    border-right: 5px solid green;
+    transform: scale(1.02);
+  }
+}
+
+.project-link{
+    transition:0.4s cubic-bezier(0, 0, 0.04, 0.97);
+}
+.project-link:hover{
+    transform: scale(1.5);
 }
 .project-title{
     text-decoration: underline;
 }
-img{
-    padding: 10px;
-}
+
 .stack-container{
     display: flex;
     flex-flow:row;
@@ -181,6 +205,8 @@ img{
 }
 img{
     transition: 0.4s;
+    padding: 10px;
+
 }
 img:hover{
   transform:  scale(1.5);
