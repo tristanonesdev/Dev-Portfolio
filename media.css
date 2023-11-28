@@ -1,0 +1,95 @@
+@media screen and (max-width: 1000px){
+    .about-title{
+        width:100%;
+    }
+    .description{
+        width:80%;
+    }
+    .projects-container{
+        display: flex;
+        flex-flow: column;
+        justify-content: space-around;
+        width: 100%;
+        height:100%;
+       
+    }
+    .project-card{
+        width:60%;
+        margin-bottom:20px ;
+        margin-left: 150px;
+        
+    }
+    .contact-card{
+        height:50%;
+        width:40%;
+        
+    }
+    .resume-container{
+        height: 75%;
+    }
+   
+}
+@media screen and (max-width: 600px){
+    .about-title{
+        font-size:12px;
+    }
+    .description{
+        font-size: 12px;
+    }
+    .project-card{
+        width: 80%;
+    }
+    .project-link:hover{
+        transform: scale(1.2);
+    }
+   .resume-contact{
+        display: flex;
+        flex-flow:column ;
+   }
+    .contact-card{
+        font-size: 9px;
+        width:80%;
+        height: 50%;
+        margin-left:50px;
+    }
+    .resume-container{
+        width:100%;
+    }
+    .section-3{
+        height: 700px;
+    }
+}
+   
+@media screen and (max-width: 400px){
+    .project-card{
+        width: 80%;
+       
+    }
+    .project-link{
+        width:200px;
+        height:150px;
+    }
+    .project-title{
+        font-size: small;
+    }
+    .stack-container{
+        flex-wrap: wrap;
+    }
+    .description{
+        width:60%;
+        margin-right: 100px;
+    }
+   .about-title{
+        display: flex;
+        flex-flow: column;
+    
+   }
+   #divider{
+        width:10vh;
+        height:0.5vh;
+        margin:3px 0px;
+   }
+
+   
+  
+}

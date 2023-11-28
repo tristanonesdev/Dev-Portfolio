@@ -28,6 +28,7 @@ section{
     flex-flow: column;
     align-items: center;
     justify-content: center;
+    overflow-x: hidden;
    
 }
 
@@ -145,6 +146,8 @@ section{
 }
 
 .project-link{
+    width:300px;
+    height:200px;
     transition:0.4s cubic-bezier(0, 0, 0.04, 0.97);
 }
 .project-link:hover{
